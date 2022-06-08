@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+         <h3>{{usuarios}}</h3> 
+        </div>
+     <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+              <tr class="text-center">
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let usuario of usuariosList" class="text-center">
+                <td>{{usuario.nombre}}</td>
+                <td>{{usuario.apellido}}</td>
+                <td>{{usuario.correo}}</td>
+                <td>
+                    <button class="btn btn-warning">editar</button>
+                    <button class="btn btn-danger">elimar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+     </div>   
+      </div>
+</div>
+
